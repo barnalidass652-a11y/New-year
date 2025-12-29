@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Happy New Year 💕</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+       <link rel="icon" href="adwaitlogo.jpg" type="image/jpg">
+</head>
+
+<body>
+    <!-- Floating Background Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <canvas id="canvas"></canvas>
+        <div class="hero-fireworks" id="hero-fireworks"></div>
+        <div class="hero-content">
+            <h1 id="typeText"></h1>
+            <p class="subtitle fade-in"></p>
+            <div id="countdown" class="countdown"></div>
+            <div class="floating-hearts">
+                <div class="heart">❤️</div>
+                <div class="heart">💖</div>
+                <div class="heart">💕</div>
+                <div class="heart">💗</div>
+                <div class="heart">❤️</div>
+            </div>
+            <div class="hero-fireworks-static">
+                <span class="firework-static">🎆</span>
+                <span class="firework-static">🎇</span>
+                <span class="firework-static">✨</span>
+                <span class="firework-static">🎆</span>
+                <span class="firework-static">🎇</span>
+            </div>
+            <button class="cta-button" onclick="scrollToSection('gallery')">
+                This is 2025🎉
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title"></h2>
+            <div class="gallery-grid">
+                <div class="photo-card" data-aos="fade-up" data-delay="100">
+                    <div class="photo-container">
+                        <img src="BARNALI1.jpg"
+                            alt="Beautiful moment">
+                        <div class="photo-overlay">
+                            <div class="photo-caption">Beautiful Day💖</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-aos="fade-up" data-delay="200">
+                    <div class="photo-container">
+                        <img src="BARNALI2.jpg"
+                            alt="Sweet memory">
+                        <div class="photo-overlay">
+                            <div class="photo-caption"></div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-aos="fade-up" data-delay="300">
+                    <div class="photo-container">
+                        <img src="BARNALI3.jpg"
+                            alt="Happy times">
+                        <div class="photo-overlay">
+                            <div class="photo-caption"></div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-aos="fade-up" data-delay="400">
+                    <div class="photo-container">
+                        <img src="BARNALI4.jpg"
+                            alt="Love moment">
+                        <div class="photo-overlay">
+                            <div class="photo-caption"></div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Birthday Message Section -->
+    <section class="message-section" id="message">
+        <div class="container">
+            <div class="message-card">
+                <h2 class="message-title">A Message For You </h2>
+                <div class="message-content">
+                    <p class="message-text fade-in-text">
+                      Happy new year 2026. May this year bring you  endless
+                        smill, Big Successes, and Unforgettable memories.
+                        May our friendship keep shining brighter than ever.🎉✨
+                    </p>
+                    <p class="message-text fade-in-text">
+                        
+                    </p>
+                    <p class="message-signature fade-in-text">
+                         Once again Happy New Year 💕
+                        Sagar 💕
+                    </p>
+                </div>
+                <div class="message-hearts">
+                    <span class="heart-animation">💖</span>
+                    <span class="heart-animation">💕</span>
+                    <span class="heart-animation">💗</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Year Celebration Section -->
+    <section class="new-year-section" id="newyear">
+        <div class="container">
+            <h2 class="new-year-title" data-aos="fade-up">Happy New Year 2026</h2>
+            <div class="fireworks">
+                <div class="firework">🎆</div>
+                <div class="firework">🎇</div>
+                <div class="firework">✨</div>
+                <div class="firework">🎆</div>
+                <div class="firework">🎇</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-firework" style="top: 20%; left: 10%;">🎆</div>
+        <div class="footer-firework" style="top: 30%; right: 15%; animation-delay: 1s;">🎇</div>
+        <div class="footer-firework" style="bottom: 40%; left: 20%; animation-delay: 2s;">✨</div>
+        <div class="footer-firework" style="bottom: 20%; right: 10%; animation-delay: 0.5s;">🎆</div>
+        <div class="container">
+            <p>&copy; 2026❤️ Thank You.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
